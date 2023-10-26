@@ -14,8 +14,52 @@
   padding: 1rem 0.5rem;
   margin: 1rem;
   box-shadow: 0 0 3px 1px black;
+  position: relative;
 }
 .list__container > ul > li:hover {
   background-color: #45aced;
   color: white;
+}
+
+.list-icon {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  margin-right: 8px;
+  color: #c63c3c;
+  cursor: pointer;
+  transition: all 50ms ease-out;
+}
+.list-icon:hover {
+  color: #8e2b2b;
+  transform: scale(1.05);
+}
+.list-icon:active {
+  transform: scale(1);
+}
+
+.add-car > input {
+  height: 25px;
+  outline: none;
+  width: 400px;
+}
+.add-car > button {
+  margin-top: 0.5rem;
+  font-size: 18px;
+  padding: 0.3rem 2rem;
+  background-color: #45aced;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+.add-car > button:hover {
+  background-color: #34a1e4;
+}
+
+.add-car > button:active {
+  background-color: #2b97db;
+  box-shadow: 0 0 2px 0 rgb(21, 191, 239);
 }
